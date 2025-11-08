@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 248 33% 21%;
+    --foreground: 30 43% 95%;
+
+    --card: 248 33% 25%;
+    --card-foreground: 30 43% 95%;
+
+    --popover: 248 33% 25%;
+    --popover-foreground: 30 43% 95%;
+
+    --primary: 322 91% 63%;
+    --primary-foreground: 248 33% 21%;
+
+    --secondary: 30 43% 95%;
+    --secondary-foreground: 248 33% 21%;
+
+    --muted: 248 33% 30%;
+    --muted-foreground: 23 58% 84%;
+
+    --accent: 23 58% 84%;
+    --accent-foreground: 248 33% 21%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 30 43% 95%;
+
+    --border: 248 33% 30%;
+    --input: 248 33% 30%;
+    --ring: 322 91% 63%;
+
+    --radius: 0.75rem;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(322, 91%, 63%), hsl(322, 91%, 73%));
+    --gradient-dark: linear-gradient(180deg, hsl(248, 33%, 21%), hsl(248, 33%, 18%));
+    --shadow-glow: 0 0 40px hsl(322 91% 63% / 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 248 33% 21%;
+    --foreground: 30 43% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Masquer le loader blanc de Calendly */
+.calendly-spinner {
+  display: none !important;
+}
+
+/* Masquer le fond blanc du loader */
+.calendly-overlay {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(3px) !important;
+}
