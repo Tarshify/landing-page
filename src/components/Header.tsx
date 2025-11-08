@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CircleChevronUp, PhoneCall, Menu } from "lucide-react";
-import Logo from "@/assets/logo.png";
+import Logo from "@/assets/ Logo.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
