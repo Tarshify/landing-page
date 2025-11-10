@@ -30,7 +30,7 @@ const points = [
   {
     icon: Gauge,
     title: "Optimisation performance & SEO",
-    desc: "Des plateformes ultra-rapides, pensées pour convertir et briller sur Google.",
+    desc: "Des e-commerces rapides, optimisés pour Google et boostés par nos campagnes ads pour attirer du trafic qualifié.",
   },
 
   {
