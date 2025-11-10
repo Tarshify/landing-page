@@ -74,17 +74,17 @@ const Header = () => {
         {mobileMenuOpen && (
           <>
             {/* Overlay semi-transparent */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.5 }}
               exit={{ opacity: 1 }}
               transition={{ duration: 0 }}
-              className="fixed inset-0 z-40 sm:hidden"
+              className="fixed inset-0 z-30 sm:hidden"
               onClick={toggleMobileMenu}
               style={{
                 top: "80px",
               }}
-            />
+            /> */}
 
             {/* Menu latéral */}
             <motion.div
