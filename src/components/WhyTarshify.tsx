@@ -30,7 +30,7 @@ const points = [
   {
     icon: Gauge,
     title: "Optimisation performance & SEO",
-    desc: "Des e-commerces rapides, optimisés pour Google et boostés par nos campagnes ads pour attirer du trafic qualifié.",
+    desc: "Des e-commerces rapides, optimisés pour Google et boostés par nos campagnes ads pour attirer du trafic qualifié (Google ads, Meta ads, TikTok ads).",
   },
 
   {
