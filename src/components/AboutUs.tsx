@@ -73,17 +73,17 @@ const AboutUs = () => {
           </h2>
           <p className="text-xl text-foreground">
             Tarshify, c'est l'union de deux développeurs passionnés :{" "}
-            <span className="text-primary">Sacha</span> expert front-end et
-            marketing, <span className="text-primary">Yasser</span> spécialiste
-            back-end et DevOps. Ensemble, on allie vision stratégique et rigueur
-            technique pour développer des e-commerces performants, stables et
-            centrés sur le client. On aime le code propre, sécurisé, les
-            interfaces soignées et les projets qui ont du sens. Notre mission :
-            donner aux marques les moyens de posséder leur liberté digitale.
+            <span className="text-primary">Sacha</span> expert front-end et{" "}
+            <span className="text-primary">Yasser</span> expert back-end.
+            Ensemble, on allie vision stratégique et rigueur technique pour
+            développer des e-commerces performants, stables et centrés sur le
+            client. On aime le code propre, sécurisé, les interfaces soignées et
+            les projets qui ont du sens. Notre mission : donner aux marques les
+            moyens de posséder leur liberté digitale.
           </p>
         </motion.div>
-        <h2 className="text-2xl md:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-[#F7F3ED] to-[#F0D1BF] bg-clip-text text-transparent">
-          <span className="text-primary">Notre méthode</span> de travail :
+        <h2 className="text-3xl sm:text-4xl font-medium mb-6 text-center bg-gradient-to-r from-[#F7F3ED] to-[#F0D1BF] bg-clip-text text-transparent">
+          <span className="text-primary">Notre méthode</span> de travail ↓
         </h2>
 
         <div className="relative mt-14" ref={containerRef}>
