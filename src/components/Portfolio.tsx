@@ -31,17 +31,16 @@ const Portfolio = () => {
 
     let animationFrameId: number;
     let scrollPosition = 0;
-    const scrollSpeed = 2.5; // pixels per frame
+    const scrollSpeed = window.innerWidth < 768 ? 1 : 2.5;
 
     const animate = () => {
       scrollPosition += scrollSpeed;
 
-      // Get the width of one set of projects (4 cards * 450px + 3 gaps * 24px)
-      const cardWidth = 450;
-      const gapWidth = 24;
+      const cardWidth =
+        window.innerWidth < 768 ? 280 : window.innerWidth < 1024 ? 350 : 450;
+      const gapWidth = window.innerWidth < 768 ? 16 : 24;
       const oneSetWidth = (cardWidth + gapWidth) * projects.length;
 
-      // Reset position when we've scrolled through one complete set
       if (scrollPosition >= oneSetWidth) {
         scrollPosition = 0;
       }
@@ -80,7 +79,7 @@ const Portfolio = () => {
       <div className="relative overflow-hidden">
         <div
           ref={scrollRef}
-          className="flex gap-4 sm:gap-6 will-change-transform"
+          className="flex gap-4 sm:gap-6 will-change-transform touch-none"
         >
           {/* Duplicate projects 3 times for seamless infinite loop */}
           {[...projects, ...projects, ...projects].map((project, index) => (
