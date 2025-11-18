@@ -15,10 +15,10 @@ const projects = [
     },
     {
         image: mockup2,
-        title: "Chajarat Mariam",
+        title: "Chajarat Maryam",
         category: "Bien-être",
         result: "Une expérience d'achat repensée qui séduit les clients.",
-        link: "https://chajaratmariam.com",
+        link: "https://chajaratmaryam.fr",
     },
 ];
 
